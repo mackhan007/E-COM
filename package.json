@@ -1,0 +1,10 @@
+{
+  "name": "ecom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aman <modamankhan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd ecomServer && yarn dev & cd ecom && yarn start && cd .."
+  }
+}
