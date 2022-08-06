@@ -5,6 +5,7 @@
   "author": "aman <modamankhan@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "cd ecomServer && yarn start",
     "dev": "cd ecomServer && yarn dev & cd ecom && yarn start && cd .."
   }
 }
