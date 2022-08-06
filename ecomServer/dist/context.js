@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.purchaseAPI = exports.offersAPI = exports.usersAPI = exports.productsAPI = exports.mongodb = void 0;
+const offers_1 = require("./collections/offers");
+const products_1 = require("./collections/products");
+const purchases_1 = require("./collections/purchases");
+const users_1 = require("./collections/users");
+const mongoDb_1 = require("./database/mongoDb");
+const mongodb = new mongoDb_1.MongoDb();
+exports.mongodb = mongodb;
+const productsAPI = new products_1.Products(mongodb.database);
+exports.productsAPI = productsAPI;
+const usersAPI = new users_1.Users(mongodb.database);
+exports.usersAPI = usersAPI;
+const offersAPI = new offers_1.Offers(mongodb.database);
+exports.offersAPI = offersAPI;
+const purchaseAPI = new purchases_1.Purchases(mongodb.database);
+exports.purchaseAPI = purchaseAPI;
