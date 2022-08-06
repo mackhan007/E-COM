@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engine": {
+    "node": "14.19.3",
+    "npm": "6.14.17"
+  },
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
