@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cd ecomServer && yarn start",
-    "dev": "cd ecomServer && yarn dev & cd ecom && yarn start && cd .."
+    "dev": "cd ecomServer && yarn dev & cd ecom && yarn start && cd ..",
+    "install": "cd ecomServer && yarn install & cd ecom && yarn install"
   }
 }
