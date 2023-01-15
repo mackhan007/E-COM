@@ -4,7 +4,7 @@ import {
 
 class MongoDb {
   constructor(url?: string, database?: string) {
-    this.#URL = url ?? 'mongodb+srv://Macky:noneed@cluster0.ov8o64q.mongodb.net/?retryWrites=true&w=majority';
+    this.#URL = url ?? 'mongodb://Macky:noneed@ac-6ivbw1z-shard-00-00.ov8o64q.mongodb.net:27017,ac-6ivbw1z-shard-00-01.ov8o64q.mongodb.net:27017,ac-6ivbw1z-shard-00-02.ov8o64q.mongodb.net:27017/?ssl=true&replicaSet=atlas-zlmbm8-shard-0&authSource=admin&retryWrites=true&w=majority';
     this.#DATABASE = database ?? 'ecom';
     this.#client = new MongoClient(
       this.#URL,

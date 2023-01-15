@@ -56,7 +56,7 @@ class Products {
       return result;
     } catch (e) {
       console.log(e);
-      return e;
+      return [];
     }
   };
 

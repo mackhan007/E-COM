@@ -37,7 +37,7 @@ class MongoDb {
                 return e;
             }
         });
-        __classPrivateFieldSet(this, _MongoDb_URL, url !== null && url !== void 0 ? url : 'mongodb+srv://macky:noneed@test.ujc1c.mongodb.net/?retryWrites=true&w=majority', "f");
+        __classPrivateFieldSet(this, _MongoDb_URL, url !== null && url !== void 0 ? url : 'mongodb://Macky:noneed@ac-6ivbw1z-shard-00-00.ov8o64q.mongodb.net:27017,ac-6ivbw1z-shard-00-01.ov8o64q.mongodb.net:27017,ac-6ivbw1z-shard-00-02.ov8o64q.mongodb.net:27017/?ssl=true&replicaSet=atlas-zlmbm8-shard-0&authSource=admin&retryWrites=true&w=majority', "f");
         __classPrivateFieldSet(this, _MongoDb_DATABASE, database !== null && database !== void 0 ? database : 'ecom', "f");
         __classPrivateFieldSet(this, _MongoDb_client, new mongodb_1.MongoClient(__classPrivateFieldGet(this, _MongoDb_URL, "f")), "f");
         this.database = __classPrivateFieldGet(this, _MongoDb_client, "f").db(__classPrivateFieldGet(this, _MongoDb_DATABASE, "f"));
